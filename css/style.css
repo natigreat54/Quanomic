@@ -38,15 +38,26 @@
 .content {
     padding: 40px;
     margin-bottom: 0;
+    height: 80vh;
+    justify-items: center;
 }
 
 .content h1 {
+    font-family: 'Dorsis', sans-serif;
     font-size:102px ;
-    font-weight: 800;
+    font-weight: 700;
+    font-style: italic;
     color: var(--primary-color);
     text-align: center;
     opacity: 0.6;
     
+}
+.content h3{
+    font-family: 'Dorsis', sans-serif;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: xx-large;
 }
 .content-right {
     background-color: #f8f9fa;
@@ -55,6 +66,7 @@
 .content-right p {
     font-size: 18px;
     color: var(--primary-color);
+    font-family: 'Dorsis' , sans-serif;
 }
 
 .content-left video {
@@ -62,6 +74,37 @@
     width: 100%;
 
 }
+
+/* Custom styles for carousel-dark */
+.carousel-dark .carousel-control-prev-icon,
+.carousel-dark .carousel-control-next-icon {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(357deg) brightness(102%) contrast(105%);
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: var(--accent-color); /* Your custom color */
+}
+
+.carousel-dark .carousel-caption {
+    color: var(--accent-color); /* Your custom text color */
+}
+
+/* Additional styles for more customization */
+.carousel-dark .carousel-control-prev-icon,
+.carousel-dark .carousel-control-next-icon {
+    background-color: var(--accent-color); /* Custom background for control icons */
+    color: var(--secondary-color);
+}
+
+.carousel-dark .carousel-control-prev,
+.carousel-dark .carousel-control-next {
+    opacity: 0.5;
+}
+
+.carousel-dark .carousel-indicators .active {
+    background-color: var(--accent-color); /* Custom color for the active indicator */
+}
+
 /* Optional: Add more styles for the footer */
 .footer {
     position: fixed;
