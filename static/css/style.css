@@ -4,6 +4,10 @@
     --accent-color: #CE2127; /* Red as accent */
     --background-color: #FFFFFF; /* White for background */
 }
+@import url('https://fonts.googleapis.com/css?family=Dorsis');
+body {
+    font-family: 'Dorsis', sans-serif;
+}
 
 /* Make the nav background as root */
 .navbar {
@@ -114,7 +118,8 @@ section .section-title {
 #footer {
     background: var(--primary-color) !important;
     color: var(--background-color);
-    padding: 60px 0;
+    padding:  0;
+    margin: 0;
 }
 #footer h5 {
     padding-left: 10px;
