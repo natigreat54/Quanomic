@@ -1,8 +1,8 @@
 :root{
-    --primary-color: #2876B9; /* Blue as primary */
-    --secondary-color: #2CDB14; /* Blue as Secondary */
+    --primary-color: rgb(40, 118, 185); /* Blue as primary */
+    --secondary-color: rgb(44, 219, 20); /* Blue as Secondary */
     --accent-color: #CE2127; /* Red as accent */
-    --background-color: #FFFFFF; /* White for background */
+    --background-color: rgb(255, 255, 255); /* White for background */
 }
 @import url('https://fonts.googleapis.com/css?family=Dorsis');
 body {
@@ -37,6 +37,41 @@ body {
     color: var(--background-color);
 }
 
+.custom-toggler {
+    border-color: var(--primary-color);
+}
+.custom-toggler-icon {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 800px) {
+
+
+    #navbarNav {
+        background-color: var(--primary-color);
+    }
+    a.nav-link {
+
+        color:var(--background-color);
+    }
+    .nav-item.active {
+        background-color: #2876B9;
+        color: var(--accent-color);
+    }
+    .nav-link:hover{
+        background-color: #2876B9;
+        color: var(--secondary-color);
+    }
+    .navbar {
+        display: flex; /* Adjust this value to match the height of your navbar */
+    }
+    .navbar > .container {
+        display: contents;
+    }
+    
+}
 
 
 .content {
@@ -77,6 +112,84 @@ body {
     width: 100%;
 
 }
+
+
+/* Image Section */
+.img-section {
+    position: relative; 
+    height: 50vh;
+}
+
+.img-section img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+
+.img-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Cover entire image */
+}
+
+.img-title h5 {
+    font-size: 3rem;
+    font-family: 'Dosis', sans-serif;
+    color: rgba(255, 255, 255, 0.7); /* Using RGB value with transparency */
+}
+
+.img-title p {
+    color: var(--primary-color);
+    font-size: medium;
+}
+.card-section {
+    position: relative;
+    z-index: 1;/* Negative margin to overlap image */
+}
+
+.card {
+    border-radius: 15px; /* Curved corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 767px) {
+    .img-title {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5); /* Cover entire image */
+    }
+
+    .img-title h5 {
+        font-size: 2rem; /* Adjust font size for mobile */
+    }
+
+    .img-title p {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+    .h-50 {
+        height: 100vh !important;
+    }
+}
+
+/* Cards Section */
+.card {
+    margin-bottom: 20px;
+}
+
 
 /* Custom styles for carousel-dark */
 .carousel-dark .carousel-control-prev-icon,

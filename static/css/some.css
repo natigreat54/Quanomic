@@ -1,0 +1,19 @@
+:root{
+    --primary-color: #2876B9; /* Blue as primary */
+    --secondary-color: #2CDB14; /* Blue as Secondary */
+    --accent-color: #CE2127; /* Red as accent */
+    --background-color: #FFFFFF; /* White for background */
+}
+
+.navbar {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+footer  {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+footer h5{
+    color: var(--secondary-color);
+}
