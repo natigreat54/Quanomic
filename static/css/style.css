@@ -75,8 +75,8 @@ body {
 
 
 .content {
-    padding: 40px;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
     justify-items: center;
 }
 
@@ -189,6 +189,19 @@ body {
 .card {
     margin-bottom: 20px;
 }
+.g-scrolling-carousel .items{
+    padding: 5px 0;
+             
+ }
+ .g-scrolling-carousel .items img{
+    display: inline-block;
+    margin-right: 10px;
+    width: 170px;
+    height: 150px;
+    line-height: 150px;
+    box-shadow: 0 0 5px #000;
+    text-align: center;
+ }  
 
 
 /* Custom styles for carousel-dark */
@@ -311,4 +324,8 @@ section .section-title {
         padding-bottom: 0px;
         margin-bottom: 10px;
     }
+}
+
+.container.taining {
+    background-color: rgba(0, 0, 0, 0.5);
 }

@@ -1,77 +1,103 @@
-.content a{
-	cursor:pointer;
+:root{
+    --primary-color: rgb(40, 118, 185); /* Blue as primary */
+    --secondary-color: rgb(44, 219, 20); /* Blue as Secondary */
+    --accent-color: rgb(206, 33, 39); /* Red as accent */
+    --background-color: rgb(255, 255, 255); /* White for background */
 }
 
-.content p{
-	padding-bottom:1rem;
+body {
+	font-family: 'Dosis', sans-serif;
+	background-color: #f8f9fa;
+	color: #343a40;
+	margin: 0;
+	padding: 0;
 }
 
-.content h5{
-	font-weight:bold;
-	color:#2b2b2b;
+.product-header {
+	background: url('static/assets/img/product-banner.jpg') no-repeat center center;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 
-.content .box-shadow{
-	-webkit-box-shadow: 0 1px 1px rgba(72,78,85,.6);
-	box-shadow: 0 1px 1px rgba(72,78,85,.6);
-	-webkit-transition: all .2s ease-out;
-	-moz-transition: all .2s ease-out;
-	-ms-transition: all .2s ease-out;
-	-o-transition: all .2s ease-out;
-	transition: all .2s ease-out;
+.product-header h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
 }
 
-.content .box-shadow:hover{
-	-webkit-box-shadow: 0 20px 40px rgba(72,78,85,.6);
-	box-shadow: 0 20px 40px rgba(72,78,85,.6);
-	-webkit-transform: translateY(-15px);
-	-moz-transform: translateY(-15px);
-	-ms-transform: translateY(-15px);
-	-o-transform: translateY(-15px);
-	transform: translateY(-15px);
+.product-header p {
+	font-size: 1.25rem;
+	color: var(--secondary-color);
+	padding: 0;
+	margin: 0;
 }
 
-.content .card{
-	border-radius: 25px;
-	
+.product-section {
+	padding: 30px 0;
 }
 
-.content .card img{
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
+.feature {
+	background-color: var(--background-color);
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	margin-bottom: 20px;
 }
 
-.content .card svg{
-	position:absolute;
-	top:19rem;
-  -webkit-transition: all .2s ease-out;
-	-moz-transition: all .2s ease-out;
-	-ms-transition: all .2s ease-out;
-	-o-transition: all .2s ease-out;
-	transition: all .2s ease-out;
-	filter:drop-shadow(2px -9px 4px rgba(0, 69, 134, 0.2));
+.feature h4 {
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+	font-family: 'Dorsis', sans-serif;
+	color: var(--accent-color);
 }
-.content .card:hover svg{
-	filter:drop-shadow(2px -9px 4px rgba(0, 69, 134, 0.4));
+.feature p {
+	color: var(--primary-color);
+	font-family: 'Dorsis', sans-serif;
 }
 
-.content i{
-	position:absolute;
-	top: 18rem;
-	right: 2rem;
-	color:white;
-	font-size:3rem;
-	background: rgb(238,174,202);
-	background: linear-gradient(133deg, rgba(255,255,255,1) 0%, rgba(211,210,231,1) 19%, rgba(11,39,73,1) 100%);
-	padding: 1rem;
-	border-radius: 100%;
-	transition: all .6s ease-in-out;
+.cta-section {
+	text-align: center;
+	padding: 60px 0;
+	margin-top: 20px;
+	background-color: var(--primary-color); /* Blue background */
 }
 
-.content .card:hover i{
-	transform: rotate(-180deg);
+.cta-section h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: var(--background-color); /* White text */
 }
 
-.content i:hover{
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.7) 0px 18px 36px -18px inset;
+.cta-section p {
+	font-size: 1.25rem;
+	margin-bottom: 30px;
+	color: var(--background-color); /* White text */
+}
+
+.cta-section .btn {
+	font-size: 1.25rem;
+	padding: 15px 30px;
+	border-radius: 30px;
+	background-color: var(--accent-color); /* Red button */
+    color: var(--background-color); /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-section .btn:hover {
+    background-color: darken(var(--accent-color), 10%); /* Slightly darker red on hover */
+}
+
+.carousel-item img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: #007b5e;
 }
