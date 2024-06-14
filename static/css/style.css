@@ -45,6 +45,25 @@ body {
     font-size: 1.5rem;
 }
 
+/* Dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* optional: adjust for the correct positioning */
+}
+
+.nav-item.dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg); /* optional: flip the caret icon */
+}
+
+.dropdown-menu {
+    background-color: var(--primary-color);
+    color: var(--background-color) !important;
+}
+
+.dropdown-menu.dropdown-item:hover {
+    background-color: var(--background-color);
+    color: var(--accent-color);
+}
 
 @media (max-width: 800px) {
 
@@ -246,6 +265,7 @@ section .section-title {
     color: var(--background-color);
     padding:  0;
     margin: 0;
+    padding-top: 20px;
 }
 #footer h5 {
     padding-left: 10px;
