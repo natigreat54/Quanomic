@@ -3,6 +3,7 @@
     --secondary-color: rgb(44, 219, 20); /* Blue as Secondary */
     --accent-color: #CE2127; /* Red as accent */
     --background-color: rgb(255, 255, 255); /* White for background */
+    --blue-violet-color: rgb(138, 43, 226); /* Blue-violet color */
 }
 @import url('https://fonts.googleapis.com/css?family=Dorsis');
 body {
@@ -347,5 +348,5 @@ section .section-title {
 }
 
 .container.taining {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
 }
