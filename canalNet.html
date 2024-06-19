@@ -1,206 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-
-    <!-- Bootstrap CSS -->
+    <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/index.css">
-    
-    <title>Product - canalNet - Quanomic</title>
+    <title>CanalNet - Quanomic - Product</title>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="/static/assets/img/logo.png" alt="Quanomic" class="navbar-logo" >
+            <a class="navbar-brand" href="index.html">
+                <img src="static/assets/img/logo.png" alt="Quanomic" class="navbar-logo" >
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars custom-toggler-icon"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav" >
                 <ul class="navbar-nav ms-auto nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html"><b>HOME</b></a>
+                        <a class="nav-link  text-uppercase" aria-current="page" href="index.html"><b>HOME</b></a>
                     </li>
                     <li class="nav-item dropdown" role="presentation">
-                        <a class="nav-link dropdown-toggle text-uppercase active" href="product.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <b>canalNet</b>
+                        <a class="nav-link dropdown-toggle text-uppercase active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>CANALNET</b>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="product.html">icad</a></li>
-                            <li><a class="dropdown-item" href="canalNet.html">canalNet</a></li>
-                            <li><a class="dropdown-item" href="drainNet.html">drainnet</a></li>
+                            <li><a class="dropdown-item" href="iCAD.html">iCAD</a></li>
+                            <li><a class="dropdown-item" href="canalNet.html">CanalNet</a></li>
+                            <li><a class="dropdown-item" href="drainNet.html">DrainNet</a></li>
                         </ul>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" aria-current="page" href="support.html"><b>SUPPORTS</b></a>
+                        <a class="nav-link text-uppercase" aria-current="page" href="support.html"><b>SUPPORTS</b></a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link " aria-current="page" href="connect.html"><b>CONNECT</b></a>
+                        <a class="nav-link text-uppercase" aria-current="page" href="connect.html"><b>CONNECT</b></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="content">
-      <div class="container py-5">
-          <!-- Header Section -->
-            <div class="product-header">
-              <h1>CanalNET Software</h1>
-              <p>The Ultimate Solution for Canal Network Design</p>
-          </div>
-
-          <!-- Introduction Section -->
-          <div class="container product-section">
-              <div class="row">
-                  <div class="col-md-8 offset-md-2 text-center" style="color: #2876B9;">
-                      <p >Tired of juggling multiple programs for your irrigation design projects? Our software solutions offer a one-stop shop for speed, quality, and value.</p>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Carousel Section -->
-           <!-- Carousel Section -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-              <div class="row">
-                  <div class="col-md-4">
-                      <img src="static/assets/img/canalNetwork  img.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                      <img src="static/assets/img/canalNetwork  img 2.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                      <img src="static/assets/img/canalNetwork img 3.png" class="d-block w-100" alt="...">
-                  </div>
-              </div>
-          </div>
-          <div class="carousel-item">
-              <div class="row">
-                  <div class="col-md-4">
-                      <img src="static/assets/img/canalNetwork  img.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                      <img src="static/assets/img/canalNetwork img 6.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="col-md-4">
-                      <img src="static/assets/img/canalNetwork img5.png" class="d-block w-100" alt="...">
-                  </div>
-              </div>
-          </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-      </button>
-          </div>
-
-          <!-- Features Section -->
-          <div class="container product-section">
-              <div class="row">
-                  <div class="col-md-6 feature">
-                      <h4>Effortless Design</h4>
-                      <p>Ditch the tedious manual calculations. CanalNET automates complex design tasks, saving you time and resources.</p>
-                  </div>
-                  <div class="col-md-6 feature">
-                      <h4>Instant Smart Networks</h4>
-                      <p>The software automatically identifies canal connections and configures the entire network, complete with sequencing and naming – saving you hours of manual work.</p>
-                  </div>
-                  <div class="col-md-6 feature">
-                      <h4>Auto Design</h4>
-                      <p>Work on both horizontal and vertical design for canal alignments seamlessly, with automated designs sizing and positioning waterways and farm structures based on set design criteria.</p>
-                  </div>
-                  <div class="col-md-6 feature">
-                      <h4>Design-Draw-Estimate</h4>
-                      <p>Complete designs, and your drawings and bill of quantity are ready to be generated automatically, saving significant time and avoiding errors.</p>
-                  </div>
-              </div>
-          </div>
-
-          <!-- Call to Action Section -->
-          <div class="cta-section">
-              <div class="container">
-                  <h2>Ready to Revolutionize Your Irrigation Projects?</h2>
-                  <p>Contact us today to learn more about how CanalNET can save your time and improve your design quality.</p>
-                  <a href="connect.html" class="btn btn-primary">Contact Us</a>
-              </div>
-          </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="text-white text-center text-lg-start" style="background-color: #2876B9;">
-        <div class="container p-4">
-            <div class="row mt-4">
-                
-                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4 pb-1">Contact Us</h5>
-                    
-                    <ul class="fa-ul" style="margin-left: 1.6em;">
-                        <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2"><i style="color:wheat;">Addis Abeba, Ethiopia</i></span>
-                          </li>
-                          <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2"><i style="color:wheat;">info@example.com</i></span>
-                          </li>
-                          <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2"><i style="color: wheat;"> +01 234 567 88</i></span>
-                          </li>
-                          <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2"><i style="color: wheat;">+ 01 234 567 89</i></span>
-                          </li>
-                    </ul>
-                    <div class="mt-4" >
-                        <a type="button" class="btn btn-floating btn-lg" style="background-color: #2876B9; color: wheat;"><i class="fab fa-facebook-f"></i></a>
-                        <a type="button" class="btn btn-floating btn-lg" style="background-color: #2876B9; color: wheat;"><i class="fab fa-twitter"></i></a>
-                        <a type="button" class="btn btn-floating btn-lg" style="background-color: #2876B9; color: wheat;"><i class="fab fa-google-plus-g"></i></a>
-
-                      </div>
+    <main class="canalnet_main">
+        <div class="container py-5">
+            <!-- Header Section -->
+            <div class="p-4 p-md-5 mb-4 text-white rounded" style="background-color: rgb(0,0,0,0.5);">
+                <div class="col-md-6 px-0">
+                    <h1 class="display-4">CanalNET Software</h1>
+                    <p class="my-3"> The Ultimate Solution for Canal Network Design</p>
+                    <p class="lead my-3">Tired of juggling multiple programs for your irrigation design projects? Our software solutions offer a one-stop shop for speed, quality, and value.</p>
+                  
                 </div>
-                
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 align-item-center">
-                    <div class="card" style="color: white; background-color: #2876B9;">
-                        <div class="card-header">
-                            <h5 class="text-uppercase mb-4">our partners</h5>
-                        </div>
-                        <div class="card-body">
-                            <button class="btn" >
-                                <strong style="color: white;" title="In 2020, we launched iCAD 2020, our first commercially available product for industry testing. We then signed a landmark Memorandum of Understanding (MoU) with the Ethiopian Construction Design and Supervision Works Corporation (ECDSWC), leading to a two-year partnership for software validation and enhancement.">Launching iCAD and Building Partnerships:</strong>
-                            </button><br>
-                            <button class="btn">
-                                <strong style="color: white;" title="We're thrilled to announce an extension of our partnership with ECDSWCo! This exciting new phase, running from December 2022 to October 2024, signifies our ongoing commitment to collaboratively improve Ethiopia's Water Development Sector.">Our Partnership with ECDSWCo Gets Supercharged:</strong>
-                            </button>
-                        </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><img src="static/assets/img/CanalNET images/9.png" alt="Image 1"></div>
+                            <div class="item"><img src="static/assets/img/CanalNET images/10.png" alt="Image 2"></div>
+                            <div class="item"><img src="static/assets/img/CanalNET images/11.png" alt="Image 3"></div>
+                            <div class="item"><img src="static/assets/img/CanalNET images/13.png" alt="Image 4"></div>
+                            <div class="item"><img src="static/assets/img/CanalNET images/14.png" alt="Image 5"></div>
+                            <div class="item"><img src="static/assets/img/CanalNET images/15.png" alt="Image 6"></div>
+                            <div class="item"><img src="static/assets/img/CanalNET images/16.png" alt="Image 7"></div>
+                            <div class="item"><img src="static/assets/img/CanalNET images/17.png" alt="Image 8"></div>
+                          </div>
                     </div>
                 </div>
-                
+            </div>
+
+            
+
+        <!-- Features Section -->
+        <div class="container product-section">
+            <div class="row">
+                <div class="col-md-6 feature">
+                    <h4>Effortless Design</h4>
+                    <p>Ditch the tedious manual calculations. CanalNET automates complex design tasks, saving you time and resources.</p>
+                </div>
+                <div class="col-md-6 feature">
+                    <h4>Instant Smart Networks</h4>
+                    <p>The software automatically identifies canal connections and configures the entire network, complete with sequencing and naming – saving you hours of manual work.</p>
+                </div>
+                <div class="col-md-6 feature">
+                    <h4>Auto Design</h4>
+                    <p>Work on both horizontal and vertical design for canal alignments seamlessly, with automated designs sizing and positioning waterways and farm structures based on set design criteria.</p>
+                </div>
+                <div class="col-md-6 feature">
+                    <h4>Design-Draw-Estimate</h4>
+                    <p>Complete designs, and your drawings and bill of quantity are ready to be generated automatically, saving significant time and avoiding errors.</p>
+                </div>
             </div>
         </div>
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">Quanomic</a>
-          </div>
 
+        <!-- Call to Action Section -->
+        <div class="cta-section">
+            <div class="container">
+                <h2>Ready to Revolutionize Your Irrigation Projects?</h2>
+                <p>Contact us today to learn more about how CanalNET can save your time and improve your design quality.</p>
+                <a href="connect.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </div>
+            
+    </div>
+    </main>
+
+    <footer class="footer container" style="background: linear-gradient(to right, rgba(6, 39, 2, 0.3), rgb(40, 118, 185,0.9) ,rgb(6, 39, 2, 0.3) );" >
+        <div class="container-fluid text-white p-3">
+            <div class="mt-3">
+                <h3 class="text-center fw-bold">Our Partners</h3>
+                <div class="partner text-center">
+                    <div>
+                        <img src="static/assets/img/EEC.png" alt="" width="40" height="40" title="Ethiopian Engineering Coorporation">
+                        <p>EEC</p>
+                    </div>
+                    <div>
+                        <img src="static/assets/img/Arba_Minch_University.png" alt="" width="40" height="40" title="Arba_Minch_University">
+                        <p>AMU</p>
+                    </div>
+                </div>
+
+                <hr>
+
+            </div>
+            <div class="row justify-content-around text-center text-md-start">
+                <div class="col-md-2">
+                    <li class="fw-bold my-2 list-unstyled text-center">Follow Us</li>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li><a href="https://www.linkedin.com/company/quanomic-ites/" target="_blank" class="linkedin-icon">
+                            <i class="fab fa-linkedin"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <li class="fw-bold my-2 list-unstyled text-center">Connect with us</li>
+                    <li class="text-decoration-none text-white list-unstyled text-center" ><a href="connect.html"><i class="fa fa-question-circle"></i></a></li>
+                </div>
+                <hr>
+            </div>
+            <div class="text-center p-3">
+                © 2024 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">Quanomic Engineering Service</a>
+              </div>
+            
+        </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+    <script>
+        $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop: true, // Enable loop
+        margin: 10, // Margin between items
+        nav: true, // Enable navigation arrows
+        responsive:{
+            0:{
+            items: 1 // Number of items to show on mobile devices (1 item on mobile)
+            },
+            600:{
+            items: 2 // Number of items to show on tablets (3 items between 600px and 900px screen width)
+            },
+            1000:{
+            items: 3 // Number of items to show on desktops (5 items between 900px and above screen width)
+            }
+        }
+    });
+});
+    </script>
 </body>
 </html>
