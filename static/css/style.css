@@ -30,6 +30,14 @@
     background-color: var(--primary-color);
     color: var(--accent-color);
 }
+.dropdown-item {
+    background-color: inherit;
+    color: var(--background-color);
+}
+.dropdown-item:hover {
+    background-color: white;
+    color: var(--accent-color);
+}
 @media (max-width: 1000px) {
     #navbarNav {
         background-color: var(--primary-color);
