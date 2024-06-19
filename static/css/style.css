@@ -30,7 +30,7 @@
     background-color: var(--primary-color);
     color: var(--accent-color);
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     #navbarNav {
         background-color: var(--primary-color);
     }
@@ -51,6 +51,16 @@
     .navbar > .container {
         display: contents;
         /* display: block; */
+    }
+    .custom-main {
+        max-width: fit-content;
+    }
+
+    .feature .col-md-6 {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
     }
 }
 
@@ -158,11 +168,6 @@
     margin-bottom: 20px;
     margin-right: 10px;
     max-width: 49%;
-}
-@media (max-width:900px) {
-    .feature {
-        max-width: 100%;
-    }
 }
 .feature:hover {
     box-shadow: 0 8px 16px rgba(40, 118, 185, 0.4);
@@ -344,6 +349,10 @@ footer {
     padding: 1.25rem;
     color: var(--primary-color);
 }
+.card-footer {
+    color: var(--primary-color);
+    background-color: inherit;
+}
 
 .more-btn {
     display: block;
@@ -391,13 +400,13 @@ footer {
     border: none;
     outline: none;
     background-color: var(--background-color);
-    color: var(--primary-color);
+    color: var(--accent-color);
     transition: 0.25s ease;
     border-radius: 8px;
-    box-shadow: inset 2px 2px 4px var(--secondary-color), inset -2px -2px 4px #012b01;
+    box-shadow: inset 2px 2px 4px white, inset -2px -2px 4px #969796;
 }
 .form__input:focus {
-    box-shadow: inset 4px 4px 4px #2876B9, inset -4px -4px 4px #091c2c;
+    box-shadow: inset 4px 4px 4px white, inset -4px -4px 4px #969796;
 }
 .form__span {
     margin-top: 30px;
